@@ -234,6 +234,10 @@ a {
   color: rgba(31, 31, 31, 0.8);
 }
 
+.advantages__content--tablet {
+  display: none;
+}
+
 
 /*   C O M M U N I T Y   */
 
@@ -278,12 +282,15 @@ a {
 
 .price__table th,
 .price__table td {
-  width: 256px;
   padding: 18px;
 }
 
 .price__table tr {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.price__table-mobile {
+  display: none;
 }
 
 .price__table tr:nth-child(1),
@@ -511,6 +518,10 @@ a {
 
 .subscribe__content:hover .subscribe__content--opacity {
   display: block;
+}
+
+.subscribe__content--tablet {
+  display: none;
 }
 
 /*  J O I N  */

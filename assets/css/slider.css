@@ -85,12 +85,34 @@
   color: rgba(0, 0, 0, 0.8);
   }
 
+  .prev {
+    left: 15px;
+  }
+
   .next {
-  left: 391px;
+  left: 370px;
   }
 
   .dot {
   width: 8px;
   height: 8px;
+  }
+}
+
+@media only screen and (max-width: 640px) and (min-width: 415px) {
+  .prev, .next {
+  top: 220px;
+  font-size: 15px;
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.8);
+  }
+
+  .next {
+  left: 611px;
+  }
+
+  .dot {
+  width: 10px;
+  height: 10px;
   }
 }
