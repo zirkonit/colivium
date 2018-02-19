@@ -6,7 +6,7 @@ var main = function() {
 
         $('.menu').animate({
 
-            left: '35'
+            left: '0'
 
         }, 200);
 
@@ -29,7 +29,7 @@ var main = function() {
 
     $('body').animate({
 
-            left: '35'
+            left: '0'
 
         }, 200);
     });
