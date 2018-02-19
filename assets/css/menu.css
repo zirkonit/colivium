@@ -10,6 +10,7 @@
 
 
 
+
 /* Basic CSS */
 
 .menu ul {
@@ -68,4 +69,12 @@
 
 .navbar-fixed-top.scrolled .icon-menu {
   background-image: url(../img/menu_nav.svg);
+}
+
+
+@media only screen and (max-width: 414px) and (min-width: 321px) {
+
+  .icon-menu {
+    margin-left: 193px;
+  }
 }

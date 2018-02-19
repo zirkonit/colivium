@@ -76,3 +76,21 @@
   height: 8px;
   }
 }
+
+@media only screen and (max-width: 414px) and (min-width: 321px) {
+  .prev, .next {
+  top: 115px;
+  font-size: 15px;
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.8);
+  }
+
+  .next {
+  left: 391px;
+  }
+
+  .dot {
+  width: 8px;
+  height: 8px;
+  }
+}
