@@ -78,3 +78,10 @@
     margin-left: 193px;
   }
 }
+
+@media only screen and (max-width: 640px) and (min-width: 415px) {
+
+  .icon-menu {
+    margin-left: 288px;
+  }
+}
