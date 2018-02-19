@@ -19,7 +19,6 @@
 
   .header__nav-list,
   .header__nav-link,
-  .price,
   .community__empty {
     display: none;
   }
@@ -138,10 +137,6 @@
     padding-bottom: 30px;
   }
 
-  .foto__about {
-    margin-top: 50px;
-  }
-
   .map__content {
     flex-direction: column;
   }
@@ -205,7 +200,6 @@
 
   .footer {
     height: 185px;
-
   }
 
   .footer__content {
@@ -222,5 +216,23 @@
     width: 80%;
     margin: 0 auto;
     margin-bottom: 50px;
+  }
+
+  .price__table th,
+  .price__table td {
+    padding: 8px;
+  }
+
+  .price__table th:nth-child(4),
+  .price__table td:nth-child(4) {
+    display: none;
+  }
+
+  .price__table {
+    font-size: 12px;
+  }
+
+  .price {
+    padding: 50px 0;
   }
 }
