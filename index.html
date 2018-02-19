@@ -4,13 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Colivium</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/png">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/media320.css">
   <link rel="stylesheet" href="./assets/css/slider.css">
+  <link rel="stylesheet" href="./assets/css/menu.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="./assets/js/scroll.js"></script>
   <script src="./assets/js/nav-scroll.js"></script>
+  <script src="./assets/js/menu.js"></script>
 </head>
 
 <body>
@@ -18,6 +22,22 @@
     <nav class="header__nav navbar-fixed-top">
       <div class="header__nav-wrapper">
         <h1 class="header__nav-title">Colivium</h1>
+        <div class="menu">
+          <div class="icon-close">
+          </div>
+          <ul>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#advantages">Преимущества</a></li>
+          <li><a href="#community">Сообщество</a></li>
+          <li><a href="#price">Цена</a></li>
+          <li><a href="#foto__about">Почему мы</a></li>
+          <li><a href="#map">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="background">
+          <div class="icon-menu">
+          </div>
+        </div>
         <ul class="header__nav-list">
           <li class="header__nav-item"><a href="#about">О нас</a></li>
           <li class="header__nav-item"><a href="#advantages">Преимущества</a></li>
@@ -91,7 +111,8 @@
         </div>
         <div class="advantages__content-item">
           <img src="./assets/img/advantages_icon/kitchen.svg" alt="" class="advantages__content-img">
-          <p class="advantages__content-row">Современная <br> кухня</p>
+          <p class="advantages__content-row">Современная
+            <br> кухня</p>
         </div>
         <div class="advantages__content-item">
           <img src="./assets/img/advantages_icon/wifi.svg" alt="" class="advantages__content-img">
@@ -102,7 +123,7 @@
           <p class="advantages__content-row">Smart TV, Netflix, PS, проектор</p>
         </div>
       </div>
-      <div class="advantages__content">
+      <div class="advantages__content advantages__content--bottom">
         <div class="advantages__content-item">
           <img src="./assets/img/advantages_icon/lightbulb.svg" alt="" class="advantages__content-img">
           <p class="advantages__content-row">Включены все
@@ -119,11 +140,13 @@
         </div>
         <div class="advantages__content-item">
           <img src="./assets/img/advantages_icon/clean.svg" alt="" class="advantages__content-img">
-          <p class="advantages__content-row">Eженедельная <br>уборка</p>
+          <p class="advantages__content-row">Eженедельная
+            <br>уборка</p>
         </div>
         <div class="advantages__content-item">
           <img src="./assets/img/advantages_icon/washing_machine.svg" alt="" class="advantages__content-img">
-          <p class="advantages__content-row">Стиральная<br> машина/сушилка</p>
+          <p class="advantages__content-row">Стиральная
+            <br> машина/сушилка</p>
         </div>
         <div class="advantages__content-item">
           <img src="./assets/img/advantages_icon/detergent.svg" alt="" class="advantages__content-img">
@@ -136,7 +159,9 @@
     <div class="community__wrapper">
       <div class="community__content">
         <div class="community__empty"></div>
-        <p class="community__row">Ты будешь приглашен на все <br>мероприятия сообщества <br>Colivium</p>
+        <p class="community__row">Ты будешь приглашен на все
+          <br>мероприятия сообщества
+          <br>Colivium</p>
       </div>
     </div>
   </section>
@@ -144,7 +169,8 @@
     <div class="price__wrapper">
       <table class="price__table">
         <tr>
-          <th class="price__table--characteristic">Сравнительная характеристика стоимости жизни<br>
+          <th class="price__table--characteristic">Сравнительная характеристика стоимости жизни
+            <br>
             <span class="price__table--coord">40 м<sup>2</sup>, м. Курская,  10 минут пешком</span>
           </th>
           <th class="pricer__table--th-color">Новая современная квартира</th>
@@ -164,7 +190,8 @@
           <td>5 000 руб/мес</td>
         </tr>
         <tr>
-          <td>Стиральная <br>машина/сушилка:</td>
+          <td>Стиральная
+            <br>машина/сушилка:</td>
           <td>Включено</td>
           <td class="pricer__table--colivium">Включено</td>
           <td>Включено</td>
@@ -230,11 +257,12 @@
   </section>
   <section class="map" id="map">
     <div class="map__content">
+      <h3 class="map__content-title map__content-title--mobile">Colivium’s map</h3>
       <div class="map__content-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.0037248227895!2d37.65823081519195!3d55.75843749902588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a8dd1a8f359%3A0x562114fc3541cfb1!2z0JrRg9GA0YHQutCw0Y8!5e0!3m2!1sru!2sru!4v1518996220798" width="813" height="542" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.0037248227895!2d37.65823081519195!3d55.75843749902588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a8dd1a8f359%3A0x562114fc3541cfb1!2z0JrRg9GA0YHQutCw0Y8!5e0!3m2!1sru!2sru!4v1518996220798" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen class="map_desktop"></iframe>
       </div>
       <div class="map__content-text">
-        <h3 class="map__content-title">Colivium’s map</h3>
+        <h3 class="map__content-title map__content-title--desktop">Colivium’s map</h3>
         <p class="map__content-row">Выбери удобный для себя Colivium:</p>
         <p class="map__content-row--metro">м. Курская</p>
         <p class="map__content-row--metro">м. Белорусская</p>
@@ -276,7 +304,9 @@
         <a href="https://twitter.com/Colivium" target="_blank" class="footer__social-link footer__social-link--tw"></a>
         <a href="https://www.instagram.com/colivium/" target="_blank" class="footer__social-link footer__social-link--in"></a>
       </div>
-      <p class="footer__row">г. Москва, ул. Таганская, 32/1 <br> <a href="mailto:hello@colivium.ru">hello@colivium.ru</a> <br><a href="tel:84951234567">8 (495) 123 - 4567</a></p>
+      <p class="footer__row">г. Москва, ул. Таганская, 32/1
+        <br> <a href="mailto:hello@colivium.ru">hello@colivium.ru</a>
+        <br><a href="tel:84951234567">8 (495) 123 - 4567</a></p>
     </div>
   </footer>
   <script src="./assets/js/slider.js"></script>
