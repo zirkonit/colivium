@@ -18,10 +18,14 @@
   <script src="./assets/js/scroll.js"></script>
   <script src="./assets/js/nav-scroll.js"></script>
   <script src="./assets/js/menu.js"></script>
+  <script src="./assets/js/map.js"></script>
 </head>
 
 <body>
   <header class="header">
+    <video autoplay loop muted class="bgvideo" id="bgvideo">
+      <source src="./assets/Colivium_video.mp4" type="video/mp4"></source>
+    </video>
     <nav class="header__nav navbar-fixed-top">
       <h1 class="header__nav-title">Colivium</h1>
       <div class="menu">
@@ -158,63 +162,6 @@
           <p class="advantages__content-row">Хозяйственный средства</p>
         </div>
       </div>
-      <!--    <div class="advantages__content advantages__content--top advantages__content--mobile">
-        <div class="advantages__content-item">
-          <img src="./assets/img/advantages_icon/comfort.svg" alt="" class="advantages__content-img">
-          <p class="advantages__content-row">Стильный и уютный дизайн</p>
-        </div>
-        <div class="advantages__content-item">
-          <img src="./assets/img/advantages_icon/people.svg" alt="" class="advantages__content-img">
-          <p class="advantages__content-row">Близкие по духу соседи</p>
-        </div>
-        <div class="advantages__content-item">
-          <img src="./assets/img/advantages_icon/sofa.svg" alt="" class="advantages__content-img">
-          <p class="advantages__content-row">Большая комната отдыха</p>
-        </div>
-        <div class="advantages__content-item">
-          <img src="./assets/img/advantages_icon/kitchen.svg" alt="" class="advantages__content-img">
-          <p class="advantages__content-row">Современная
-            <br> кухня</p>
-        </div>
-        <div class="advantages__content-item">
-          <img src="./assets/img/advantages_icon/wifi.svg" alt="" class="advantages__content-img">
-          <p class="advantages__content-row">Неприлично быстрый wi-fi</p>
-        </div>
-        <div class="advantages__content-item">
-          <img src="./assets/img/advantages_icon/tv.svg" alt="" class="advantages__content-img">
-          <p class="advantages__content-row">Smart TV, Netflix, PS, проектор</p>
-        </div>
-      </div>
-      <div class="advantages__content advantages__content--bottom advantages__content--mobile">
-        <div class="advantages__content-item">
-          <img src="./assets/img/advantages_icon/lightbulb.svg" alt="" class="advantages__content-img">
-          <p class="advantages__content-row">Включены все
-            <br>коммунальные платежи</p>
-        </div>
-        <div class="advantages__content-item">
-          <img src="./assets/img/advantages_icon/bed.svg" alt="" class="advantages__content-img">
-          <p class="advantages__content-row">Личная
-            <br>укомплектованная спальня</p>
-        </div>
-        <div class="advantages__content-item">
-          <img src="./assets/img/advantages_icon/shelves.svg" alt="" class="advantages__content-img">
-          <p class="advantages__content-row">Встроенная мебель</p>
-        </div>
-        <div class="advantages__content-item">
-          <img src="./assets/img/advantages_icon/clean.svg" alt="" class="advantages__content-img">
-          <p class="advantages__content-row">Eженедельная
-            <br>уборка</p>
-        </div>
-        <div class="advantages__content-item">
-          <img src="./assets/img/advantages_icon/washing_machine.svg" alt="" class="advantages__content-img">
-          <p class="advantages__content-row">Стиральная
-            <br> машина/сушилка</p>
-        </div>
-        <div class="advantages__content-item">
-          <img src="./assets/img/advantages_icon/detergent.svg" alt="" class="advantages__content-img">
-          <p class="advantages__content-row">Хозяйственный средства</p>
-        </div>
-      </div> -->
     </div>
   </section>
   <section class="community" id="community">
@@ -241,9 +188,12 @@
             <br>
             <span class="price__table--coord">40 м<sup>2</sup>, м. Курская,  10 минут пешком</span>
           </th>
-          <th class="pricer__table--th-color">Новая современная квартира<br><span style="font-size: 12px; color: #aaa;">тыс. рублей/мес</span></th>
-          <th>Colivium<br><span style="font-size: 12px; color: #aaa;">тыс. рублей/мес</span></th>
-          <th class="pricer__table--th-color">Дешевая квартира<br><span style="font-size: 12px; color: #aaa;">тыс. рублей/мес</span></th>
+          <th class="pricer__table--th-color">Новая современная квартира
+            <br><span style="font-size: 12px; color: #aaa;">тыс. рублей/мес</span></th>
+          <th>Colivium
+            <br><span style="font-size: 12px; color: #aaa;">тыс. рублей/мес</span></th>
+          <th class="pricer__table--th-color">Дешевая квартира
+            <br><span style="font-size: 12px; color: #aaa;">тыс. рублей/мес</span></th>
         </tr>
         <tr>
           <td>Стоимость аренды:</td>
@@ -327,8 +277,7 @@
   <section class="map" id="map">
     <div class="map__content">
       <h3 class="map__content-title map__content-title--mobile">Colivium’s map</h3>
-      <div class="map__content-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.1248266115776!2d37.66304199191216!3d55.73896008660065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54ac2c08c21f9%3A0x266d8627cbdd9a15!2z0KLQsNCz0LDQvdGB0LrQsNGPINGD0LsuLCAzMi8xLCDQnNC-0YHQutCy0LAsIDEwOTE0Nw!5e0!3m2!1sru!2sru!4v1519064835492" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div id="map__content-map">
       </div>
       <div class="map__content-text">
         <h3 class="map__content-title map__content-title--desktop">Colivium’s map</h3>
@@ -395,6 +344,7 @@
     </div>
   </footer>
   <script src="./assets/js/slider.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI_QwYjdRJdRaQhE_Usq4ddLAa3eX5_30&callback=initMap" async defer></script>
 </body>
 
 </html>
