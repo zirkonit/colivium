@@ -42,7 +42,7 @@
 .icon-close {
   width: 18px;
   height: 18px;
-  margin-top: 29px;
+  margin-top: 21px;
   margin-left: 248px;
   cursor: pointer;
   background-image: url(../img/close.svg);
@@ -54,8 +54,8 @@
 .icon-menu {
   width: 18px;
   height: 18px;
-  margin-top: 29px;
-  margin-left: 153px;
+  margin-top: 21px;
+  margin-left: 112px;
   cursor: pointer;
   background-image: url(../img/menu.svg);
   background-repeat: no-repeat;
@@ -75,14 +75,14 @@
 @media only screen and (max-width: 414px) and (min-width: 321px) {
 
   .icon-menu {
-    margin-left: 193px;
+    margin-left: 133px;
   }
 }
 
 @media only screen and (max-width: 640px) and (min-width: 415px) {
 
   .icon-menu {
-    margin-left: 288px;
+    margin-left: 172px;
   }
 }
 

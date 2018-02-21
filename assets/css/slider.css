@@ -1,6 +1,6 @@
 .slideshow-container {
   position: relative;
-    width: 100%;
+    width: 100%;;
 }
 
 .prev, .next {
@@ -23,7 +23,7 @@
 
 .next {
     background-image: url(../img/right-arrow.svg);
-    left: 708px;
+    left: 94.5%;
 }
 
 .prev:hover, .next:hover {
@@ -71,14 +71,16 @@
 
 @media only screen and (max-width: 320px) {
   .prev, .next {
-  top: 75px;
+  top: 92px;
   font-size: 15px;
   padding: 10px;
   color: rgba(0, 0, 0, 0.8);
+  width: 15px;
+  height: 15px;
   }
 
   .next {
-  left: 291px;
+  left: 299px;
   }
 
   .dot {
@@ -93,14 +95,16 @@
   font-size: 15px;
   padding: 10px;
   color: rgba(0, 0, 0, 0.8);
+  width: 20px;
+  height: 30px;
   }
 
   .prev {
-    left: 15px;
+    left: 5px;
   }
 
   .next {
-  left: 370px;
+  left: 390px;
   }
 
   .dot {
@@ -111,14 +115,16 @@
 
 @media only screen and (max-width: 640px) and (min-width: 415px) {
   .prev, .next {
-  top: 220px;
+  top: 200px;
   font-size: 15px;
   padding: 10px;
   color: rgba(0, 0, 0, 0.8);
+  width: 25px;
+  height: 30px;
   }
 
   .next {
-  left: 611px;
+  left: 614px;
   }
 
   .dot {
@@ -138,3 +144,17 @@
   }
 
 }
+
+@media only screen and (max-width: 912px) and (min-width: 769px) {
+  .prev, .next {
+  width: 20px;
+  height: 30px;
+  top: 150px;
+  }
+
+  .next {
+  left: 515px;
+
+  }
+}
+
