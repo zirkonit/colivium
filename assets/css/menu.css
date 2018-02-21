@@ -89,12 +89,12 @@
 @media only screen and (max-width: 768px) and (min-width: 641px) {
 
   .icon-menu {
-    margin-left: 503px;
+    margin-left: 348px;
   }
 }
 
 @media only screen and (max-width: 912px) and (min-width: 769px) {
   .icon-menu {
-    margin-left: 622px;
+    margin-left: 432px;
   }
 }
