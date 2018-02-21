@@ -19,7 +19,8 @@
 
   .header__nav-list,
   .header__nav-link,
-  .community__empty {
+  .community__empty,
+  .header__nav-link--cont {
     display: none;
   }
 
@@ -33,6 +34,14 @@
 
   .header__nav-title {
     border: none;
+    width: 50%;
+    margin-left: -76px;
+  }
+
+  .menu,
+  .background {
+    display: block;
+    width: 50%;
   }
 
   .header__nav {
@@ -58,11 +67,11 @@
   }
 
   .community__row {
-    width: 90%;
     margin: 0 auto;
-    line-height: 1.5;
+    line-height: 1.1;
     font-weight: 500;
-    padding-top: 120px;
+    padding-top: 20px;
+    font-size: 18px;;
   }
 
   .about,
@@ -75,20 +84,27 @@
     margin-top: 18px;}
 
   .about__text-title {
-    padding-top: 0px;
+    padding-top: 20px;
+    font-size: 22px;;
   }
 
   .about__text-row {
-    font-size: 12px;
+    font-size: 11px;
     padding: 0px 10px 10px 10px;
     text-align: center;
   }
 
   .advantages {
+    padding-bottom: 0;
+    padding-top: 20px;
   }
 
   .advantages__content--top {
-    padding-top: 30px;;
+    padding-top: 30px;
+  }
+
+  .community__text {
+    width: 100%;
   }
 
   .advantages__content--bottom {
@@ -108,12 +124,12 @@
   }
 
   .map__content-title--desktop {
-    padding-top: 0;;
+    padding-top: 20px;
   }
 
-  .map__content-map {
+  #map__content-map {
     width: 100%;
-    height: 330px;
+    height: 450px;
   }
 
   .map__content-text {
@@ -121,8 +137,7 @@
   }
 
   .map {
-    background-color: rgba(241, 241, 241, 0.6);
-    padding-top: 50px;;
+    background-color: rgba(241, 241, 241, 0.6);;
   }
 
   .map__content-row {
@@ -154,7 +169,7 @@
   }
 
   .join {
-    height: 100%;
+    height: 395px;
   }
 
   .join__title {
