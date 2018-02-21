@@ -21,7 +21,8 @@
   .header__nav-link,
   .community__empty,
   .header__nav-link--cont,
-  .bgvideo {
+  .bgvideo,
+  .subscribe__content p  {
     display: none;
   }
 
