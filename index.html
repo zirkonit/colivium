@@ -15,10 +15,22 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="./assets/js/scroll.js"></script>
+  <script src="./assets/js/popup.js"></script>
   <script src="./assets/js/nav-scroll.js"></script>
   <script src="./assets/js/menu.js"></script>
   <script src="./assets/js/map.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('a[href^="#"], *[data-href^="#"]').on('click', function(e) {
+      e.preventDefault();
+      var t = 1000;
+      var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
+      $('html,body').stop().animate({ scrollTop: $(d).offset().top }, t);
+    });
+  });
+
+  </script>
+  <link rel="stylesheet" href="./assets/css/popup.css">
 </head>
 
 <body>
@@ -57,7 +69,12 @@
     <div class="header__wrapper">
       <h2 class="header__title">Colivium</h2>
       <h3 class="header__subtitle">Умный образ для молодых профессионалов</h3>
-      <a href="" class="header__link">Записаться на просмотр</a>
+      <a href="#modal1" class="header__link open_modal">Записаться на просмотр</a>
+      <div id="modal1" class="modal_div">
+        <span class="modal_close">X</span>
+        <p>sdjhsfkjdfhskjdfhskdhfks</p>
+      </div>
+      <div id="overlay"></div>
     </div>
   </header>
   <section class="about" id="about">
