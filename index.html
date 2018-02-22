@@ -46,9 +46,7 @@
         <ul>
           <li><a href="#about">О нас</a></li>
           <li><a href="#advantages">Преимущества</a></li>
-          <li><a href="#community">Сообщество</a></li>
-          <li><a href="#price">Цена</a></li>
-          <li><a href="#foto__about">Почему мы</a></li>
+          <li><a href="#price">Сколько это стоит</a></li>
           <li><a href="#map">Контакты</a></li>
         </ul>
       </div>
@@ -59,9 +57,7 @@
       <ul class="header__nav-list">
         <li class="header__nav-item"><a href="#about">О нас</a></li>
         <li class="header__nav-item"><a href="#advantages">Преимущества</a></li>
-        <li class="header__nav-item"><a href="#community">Сообщество</a></li>
-        <li class="header__nav-item"><a href="#price">Цена</a></li>
-        <li class="header__nav-item"><a href="#foto__about">Почему мы</a></li>
+        <li class="header__nav-item"><a href="#price">Сколько это стоит</a></li>
         <li class="header__nav-item"><a href="#map">Контакты</a></li>
       </ul>
       <div class="header__nav-link--cont"><a href="#modal2" class="header__nav-link open_modal">Записаться на просмотр</a></div>
@@ -81,7 +77,7 @@
     </nav>
     <div class="header__wrapper">
       <h2 class="header__title">Colivium</h2>
-      <h3 class="header__subtitle">Умный образ для молодых профессионалов</h3>
+      <h3 class="header__subtitle">Умный образ для молодых профессионалов<br>Первый полностью укомплектованный коливинг в Москве</h3>
       <a href="#modal1" class="header__link open_modal">Записаться на просмотр</a>
       <div id="modal1" class="modal_div">
         <span class="modal_close"></span>
@@ -114,9 +110,6 @@
           <div class="mySlides fade">
             <img src="./assets/img/about-4-min.jpg" style="width: 100%;" alt="">
           </div>
-          <div class="mySlides fade">
-            <img src="./assets/img/about-5-min.jpg" style="width: 100%;" alt="">
-          </div>
           <a onclick="plusSlides(-1)" class="prev"></a>
           <a onclick="plusSlides(1)" class="next"></a>
         </div>
@@ -125,7 +118,6 @@
           <span class="dot" onclick="currentSlide(2)"></span>
           <span class="dot" onclick="currentSlide(3)"></span>
           <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>
         </div>
       </div>
       <div class="about__text">
@@ -165,13 +157,13 @@
             <br>укомплектованная спальня</p>
         </div>
         <div class="advantages__content-item">
-          <img src="./assets/img/advantages_icon/shelves.svg" alt="" class="advantages__content-img">
-          <p class="advantages__content-row">Встроенная мебель</p>
-        </div>
-        <div class="advantages__content-item">
           <img src="./assets/img/advantages_icon/kitchen.svg" alt="" class="advantages__content-img">
           <p class="advantages__content-row">Современная
             <br> кухня</p>
+        </div>
+        <div class="advantages__content-item">
+          <img src="./assets/img/advantages_icon/doc.svg" alt="" class="advantages__content-img">
+          <p class="advantages__content-row">Прозрачный договор, <br>никаких агентских платежей</p>
         </div>
       </div>
       <div class="advantages__content advantages__content--top advantages__content--tablet">
@@ -204,13 +196,12 @@
             <br>уборка</p>
         </div>
         <div class="advantages__content-item">
-          <img src="./assets/img/advantages_icon/washing_machine.svg" alt="" class="advantages__content-img">
-          <p class="advantages__content-row">Стиральная
-            <br> машина/сушилка</p>
+          <img src="./assets/img/advantages_icon/distance.svg" alt="" class="advantages__content-img">
+          <p class="advantages__content-row">15 минут до работы</p>
         </div>
         <div class="advantages__content-item">
           <img src="./assets/img/advantages_icon/detergent.svg" alt="" class="advantages__content-img">
-          <p class="advantages__content-row">Хозяйственный средства</p>
+          <p class="advantages__content-row">Безлимитные<br> хозяйственные средства</p>
         </div>
       </div>
     </div>
@@ -218,12 +209,11 @@
   <section class="community" id="community">
     <div class="community__wrapper">
       <div class="community__content">
-        <div class="community__empty"></div>
         <div class="community__text">
           <h3 class="community__title">Cообщество Colivium</h3>
           <p class="community__row">Ты будешь приглашен на все
-            <br>мероприятия сообщества
-            <br>Colivium</p>
+            мероприятия сообщества
+            Colivium</p>
           <p class="community__row">Твоя жизнь станет насыщенной и интересной </p>
           <p class="community__row">Ты сделаешь Colivium ярче</p>
           <p class="community__row">Все мероприятия и новости Colivium в одном приложении</p>
@@ -239,11 +229,11 @@
             <br>
             <span class="price__table--coord">40 м<sup>2</sup>, м. Курская,  10 минут пешком</span>
           </th>
-          <th class="pricer__table--th-color">Новая современная квартира
+          <th class="pricer__table--th-color">Новая современная квартира<span style="font-size: 12px; color: #aaa;"><br>40 м<sup>2</sup></span>
             <br><span style="font-size: 12px; color: #aaa;">тыс. рублей/мес</span></th>
-          <th>Colivium
+          <th>Colivium<br><span style="font-size: 12px; color: #aaa;">120 м<sup>2</sup></span>
             <br><span style="font-size: 12px; color: #aaa;">тыс. рублей/мес</span></th>
-          <th class="pricer__table--th-color">Дешевая квартира
+          <th class="pricer__table--th-color">Дешевая квартира<br><span style="font-size: 12px; color: #aaa;">40 м<sup>2</sup></span>
             <br><span style="font-size: 12px; color: #aaa;">тыс. рублей/мес</span></th>
         </tr>
         <tr>
@@ -256,26 +246,26 @@
           <td>Коммунальные платежи:</td>
           <td>Включено</td>
           <td class="pricer__table--colivium">Включено</td>
-          <td>5</td>
+          <td>3</td>
         </tr>
         <tr>
           <td>Стиральная
             <br>машина/сушилка:</td>
-          <td>Включено</td>
-          <td class="pricer__table--colivium">Включено</td>
-          <td>Включено</td>
+          <td>+ / +</td>
+          <td class="pricer__table--colivium">+ / +</td>
+          <td>+ / -</td>
         </tr>
         <tr>
           <td>Еженедельная уборка:</td>
-          <td>8</td>
+          <td>4</td>
           <td class="pricer__table--colivium">Включено</td>
-          <td>8</td>
+          <td>4</td>
         </tr>
         <tr>
           <td>Хозяйственные товары:</td>
-          <td>5</td>
+          <td>3</td>
           <td class="pricer__table--colivium">Включено</td>
-          <td></td>
+          <td>3</td>
         </tr>
         <tr>
           <td>Супербыстрый Wifi:</td>
@@ -285,15 +275,15 @@
         </tr>
         <tr>
           <td>Укомплектованное место для работы:</td>
-          <td>Включено</td>
+          <td>&#8212;</td>
           <td class="pricer__table--colivium">Включено</td>
-          <td>Включено</td>
+          <td>&#8212;</td>
         </tr>
         <tr>
           <td class="price__table--total">ИТОГО:</td>
-          <td>73</td>
+          <td>67</td>
           <td class="pricer__table--color">49</td>
-          <td>55</td>
+          <td>50</td>
         </tr>
       </table>
     </div>
@@ -327,11 +317,11 @@
   </section>
   <section class="map" id="map">
     <div class="map__content">
-      <h3 class="map__content-title map__content-title--mobile">Colivium’s map</h3>
+      <h3 class="map__content-title map__content-title--mobile">Контакты</h3>
       <div id="map__content-map">
       </div>
       <div class="map__content-text">
-        <h3 class="map__content-title map__content-title--desktop">Colivium’s map</h3>
+        <h3 class="map__content-title map__content-title--desktop">Контакты</h3>
         <p class="map__content-row">Выбери удобный для себя Colivium:</p>
         <p class="map__content-row--metro">м. Курская</p>
         <p class="map__content-row--metro">м. Белорусская</p>
@@ -417,7 +407,8 @@
       </div>
       <p class="footer__row">г. Москва, ул. Таганская, 32/1
         <br> <a href="mailto:hello@colivium.ru">hello@colivium.ru</a>
-        <br><a href="tel:84951234567">8 (495) 123 - 4567</a></p>
+        <br>© 2018 Colivium, Все права защищены.
+        </p>
     </div>
   </footer>
   <script src="./assets/js/slider.js"></script>
