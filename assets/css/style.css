@@ -287,9 +287,6 @@ a {
   margin-top: -23px;
   z-index: 99999999;
   position: relative;
-  ;
-  ;
-  ;
 }
 
 .advantages__content {
@@ -309,7 +306,7 @@ a {
 }
 
 .advantages__content-img {
-  width: 100px;
+  width: 80px;
   margin: 0 auto;
   display: block;
 }
@@ -339,6 +336,7 @@ a {
 
 .community__content {
   display: flex;
+  justify-content: flex-start;
 }
 
 .community__empty {
@@ -346,14 +344,13 @@ a {
 }
 
 .community__text {
-  width: 40%;
   padding-bottom: 30px;
+  width: 100%;
 }
 
 .community__title {
   font-size: 35px;
   font-weight: 600;
-  text-align: center;
   color: #f2f2f2;
   padding: 80px 0 15px 0;
 }
@@ -361,9 +358,8 @@ a {
 .community__row {
   line-height: 1.1;
   color: #f2f2f2;
-  text-align: center;
-  font-size: 22px;
-  padding: 5px 0;
+  font-size: 18px;
+  padding: 30px 0;
   font-weight: 500;
 }
 
