@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Colivium</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/media912.css">
+  <link rel="stylesheet" href="./assets/css/media768.css">
+  <link rel="stylesheet" href="./assets/css/media640.css">
+  <link rel="stylesheet" href="./assets/css/media414.css">
+  <link rel="stylesheet" href="./assets/css/media320.css">
+  <link rel="stylesheet" href="./assets/css/slider.css">
+  <link rel="stylesheet" href="./assets/css/menu.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./assets/js/popup.js"></script>
+  <script src="./assets/js/nav-scroll.js"></script>
+  <script src="./assets/js/menu.js"></script>
+  <script src="./assets/js/map.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('a[href^="#"], *[data-href^="#"]').on('click', function(e) {
+      e.preventDefault();
+      var t = 1000;
+      var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
+      $('html,body').stop().animate({ scrollTop: $(d).offset().top }, t);
+    });
+  });
+
+  </script>
+  <link rel="stylesheet" href="./assets/css/popup.css">
+</head>
+
+<body>
+  <header class = "header">
+    <video autoplay loop muted class="bgvideo" id="bgvideo">
+      <source src="./assets/Colivium_video.mp4" type="video/mp4"></source>
+    </video>
+    
+    <nav class="header__nav navbar-fixed-top">
+      <h1 class="header__nav-title">Colivium</h1>
+      <div class="menu">
+        <div class="icon-close">
+        </div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#advantages">Advantages</a></li>
+          <li><a href="#price">Price</a></li>
+          <li><a href="#map">Contacts</a></li>
+          <li><a href="index.html">РУ</a></li>
+        </ul>
+      </div>
+      <div class="background">
+        <div class="icon-menu">
+        </div>
+      </div>
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a href="#about">About</a></li>
+        <li class="header__nav-item"><a href="#advantages">Advantages</a></li>
+        <li class="header__nav-item"><a href="#price">Price</a></li>
+        <li class="header__nav-item"><a href="#map">Contact</a></li>
+        <li class="header__nav-item"><a href="index.html">РУ</a></li>
+      </ul>
+      <div class="header__nav-link--cont"><a href="#modal2" class="header__nav-link open_modal">Request an appointment</a></div>
+      <div id="modal2" class="modal_div">
+        <span class="modal_close"></span>
+        <h3 class="modal_div-title">Request an appointment</h3>
+        <p class="modal_div-text">Do you want to take a look inside the Colivium?
+          <br>Book an appointment and our manager will contact you soon.</p>
+        <form action="https://formspree.io/hello@colivium.ru" method="POST" class="modal_div-form">
+            <input name="firstname" type="text" placeholder="First name">
+            <input name="lastname" type="text" placeholder="Last name">
+            <input name="email" type="email" placeholder="Facebook link">
+            <input name="tel" type="tel" placeholder="Phone">
+            <input type="hidden" name="_language" value="en" />
+          <button class="modal_div-button ">Request</button>
+        </form>
+      </div>
+      <div class="overlay"></div>
+    </nav>
+    <div class="header__wrapper">
+      <h2 class="header__title">Colivium</h2>
+      <h3 class="header__subtitle">The smart lifestyle for young urban professionals<br>The first fully furnished coliving in Moscow</h3>
+      <a href="#modal1" class="header__link open_modal">Request an appointment</a>
+      <div id="modal1" class="modal_div">
+        <span class="modal_close"></span>
+        <h3 class="modal_div-title">Request an appointment</h3>
+        <p class="modal_div-text">Do you want to take a look inside the Colivium? <br>Request an appointment and our manager will contact you soon.</p>
+        <form action="https://formspree.io/hello@colivium.ru" method="POST" class="modal_div-form">
+            <input name="firstname" type="text" placeholder="First name">
+            <input name="lastname" type="text" placeholder="Last name">
+            <input name="email" type="email" placeholder="Facebook link">
+            <input name="tel" type="tel" placeholder="Phone">
+            <input type="hidden" name="_language" value="en" />
+          <button class="modal_div-button">Request</button>
+        </form>
+      </div>
+      <div class="overlay"></div>
+      </div>
+  </header>
+  <section class="about" id="about">
+    <div class="about__content">
+      <div class="about__slider">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="./assets/img/about_1_EN.jpg" style="width: 100%;" alt=" ">
+          </div>
+          <div class="mySlides fade">
+            <img src="./assets/img/about_2_EN.jpg" style="width: 100%; " alt=" ">
+          </div>
+          <div class="mySlides fade">
+            <img src="./assets/img/about_3_EN.jpg" style="width: 100%; " alt=" ">
+          </div>
+          <div class="mySlides fade">
+            <img src="./assets/img/about_4_EN.jpg" style="width: 100%; " alt=" ">
+          </div>
+          <a onclick="plusSlides(-1)" class="prev"></a>
+          <a onclick="plusSlides(1)" class="next"></a>
+        </div>
+        <div class="dot_box">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
+      <div class="about__text">
+        <h3 class="about__text-title">Colivium</h3>
+        <p class="about__text-row"><span class="about__text-row--bold">Colivium</span> – the first chain of colivings in Moscow.</p>
+        <p class="about__text-row"><span class="about__text-row--bold">Coliving</span> – moden, comfortable, fully furnished space for living, creating, finding new friends and enjoyiong life.</p>
+        <p class="about__text-row"><span class="about__text-row--bold">Colivium</span> offers unique interior designs, so you could feel like home.</p>
+        <p class="about__text-row">Specially designed areas will help you to know your neighbours and provide a true sense of creative community.</p>
+        <p class="about__text-row"><span class="about__text-row--bold">Colivium</span> – place where you can make lifelong friends.</p>
+        <a href="#modal3" class="about__text-link open_modal">Request an appointment</a>
+        <div id="modal3" class="modal_div">
+          <span class="modal_close"></span>
+          <h3 class="modal_div-title">Request an appointment</h3>
+          <p class="modal_div-text">Do you want to take a look inside the Colivium? <br>Request an appointment and our manager will contact you soon.</p>
+          <form action="https://formspree.io/hello@colivium.ru" method="POST" class="modal_div-form">
+            <input name="firstname" type="text" placeholder="First name">
+            <input name="lastname" type="text" placeholder="Last name">
+            <input name="email" type="email" placeholder="Facebook link">
+            <input name="tel" type="tel" placeholder="Phone">
+            <input type="hidden" name="_language" value="en" />
+          <button class="modal_div-button">Request</button>
+        </form>
+      </div>
+      <div class="overlay"></div>
+      </div>
+    </div>
+  </section>
+  <section class="advantages" id="advantages">
+  <h2 class="subscribe__title ">Advantages</h2>
+    <div class="advantages__wrapper">
+      <div class="advantages__content advantages__content--top advantages__content--tablet">
+        <div class="advantages__content-item">
+          <img src="./assets/img/advantages_icon/comfort.svg" alt=" " class="advantages__content-img">
+          <p class="advantages__content-row">Premium modern design</p>
+        </div>
+        <div class="advantages__content-item">
+          <img src="./assets/img/advantages_icon/bed.svg" alt=" " class="advantages__content-img">
+          <p class="advantages__content-row">Private
+            <br>bedroom</p>
+        </div>
+        <div class="advantages__content-item">
+          <img src="./assets/img/advantages_icon/kitchen.svg" alt=" " class="advantages__content-img">
+          <p class="advantages__content-row">High-end
+            <br> kitchen</p>
+        </div>
+        <div class="advantages__content-item">
+          <img src="./assets/img/advantages_icon/doc.svg" alt=" " class="advantages__content-img">
+          <p class="advantages__content-row">Transparent contract, <br>no agency commission</p>
+        </div>
+      </div>
+      <div class="advantages__content advantages__content--top advantages__content--tablet">
+        <div class="advantages__content-item">
+          <img src="./assets/img/advantages_icon/wifi.svg" alt=" " class="advantages__content-img">
+          <p class="advantages__content-row">High-speed Wi-Fi</p>
+        </div>
+        <div class="advantages__content-item">
+          <img src="./assets/img/advantages_icon/tv.svg" alt=" " class="advantages__content-img">
+          <p class="advantages__content-row">Smart TV, Netflix, <br>PS, projector, etc.</p>
+        </div>
+        <div class="advantages__content-item">
+          <img src="./assets/img/advantages_icon/people.svg " alt=" " class="advantages__content-img ">
+          <p class="advantages__content-row ">Like-minded <br>neighbours</p>
+        </div>
+        <div class="advantages__content-item">
+          <img src="./assets/img/advantages_icon/sofa.svg" alt=" " class="advantages__content-img">
+          <p class="advantages__content-row">Home manager</p>
+        </div>
+      </div>
+      <div class="advantages__content advantages__content--top advantages__content--tablet">
+        <div class="advantages__content-item">
+          <img src="./assets/img/advantages_icon/lightbulb.svg" alt=" " class="advantages__content-img">
+          <p class="advantages__content-row">All utilities
+            <br>included</p>
+        </div>
+        <div class="advantages__content-item">
+          <img src="./assets/img/advantages_icon/clean.svg" alt=" " class="advantages__content-img">
+          <p class="advantages__content-row">Weekly
+            <br>cleaning</p>
+        </div>
+        <div class="advantages__content-item">
+          <img src="./assets/img/advantages_icon/distance.svg" alt=" " class="advantages__content-img">
+          <p class="advantages__content-row">In the very center</p>
+        </div>
+        <div class="advantages__content-item">
+          <img src="./assets/img/advantages_icon/detergent.svg" alt=" " class="advantages__content-img">
+          <p class="advantages__content-row">Essential<br> household supplies</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="community" id="community">
+    <div class="community__wrapper">        
+        <div class="community__content">
+        <div class="community__text">
+          <h3 class="community__title">Community</h3>
+          <p class="community__row">Integral part of Colivium experience is it's community events</p>
+          <p class="community__row">You will have yoga classes, workshops, movie evenings, etc. </p>
+          <p class="community__row">You could also propose your own events</p>
+          <p class="community__row">You will have all available info in the Colivium App</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="price" id="price">
+    <h2 class="subscribe__title ">Price</h2>
+    <div class="price__wrapper">
+      <table class="price__table">
+        <tr>
+          <th class="price__table--characteristic"><span class="price__table-desktop">Colivium vs other rent options</span><span class="price__table-mobile">Comparative characteristic</span>
+            <br>
+            <span class="price__table--coord">40 m<sup>2</sup>, 10 minutes from Kurskaya metro station </span>
+          </th>
+          <th class="pricer__table--th-color">New modern flat<span style="font-size: 12px; color: #aaa; "><br>40 m<sup>2</sup></span>
+            <br><span style="font-size: 12px; color: #aaa; ">'000 RUR/month</span></th>
+          <th>Colivium<br><span style="font-size: 12px; color: #aaa; ">120 м<sup>2</sup></span>
+            <br><span style="font-size: 12px; color: #aaa; ">'000 RUR/month</span></th>
+          <th class="pricer__table--th-color">Cheap Babushka flat<br><span style="font-size: 12px; color: #aaa; ">40 m<sup>2</sup></span>
+            <br><span style="font-size: 12px; color: #aaa; ">'000 RUR/month</span></th>
+        </tr>
+        <tr>
+          <td>Rent:</td>
+          <td>60</td>
+          <td class="pricer__table--colivium">49</td>
+          <td>38</td>
+        </tr>
+        <tr>
+          <td>Utilities:</td>
+          <td>Included</td>
+          <td class="pricer__table--colivium">Included</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Washer/Dryer:</td>
+          <td>+ / +</td>
+          <td class="pricer__table--colivium">+ / +</td>
+          <td>+ / -</td>
+        </tr>
+        <tr>
+          <td>Weekly cleaning:</td>
+          <td>4</td>
+          <td class="pricer__table--colivium">Included</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Household supplies:</td>
+          <td>3</td>
+          <td class="pricer__table--colivium">Included</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>High-speed Wi-Fi:</td>
+          <td>Included</td>
+          <td class="pricer__table--colivium">Included</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Working place:</td>
+          <td>&#8212;</td>
+          <td class="pricer__table--colivium">Included</td>
+          <td>&#8212;</td>
+        </tr>
+        <tr>
+          <td class="price__table--total">TOTAL:</td>
+          <td>67</td>
+          <td class="pricer__table--color">49</td>
+          <td>50</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <section class="foto__about" id="foto__about">
+    <div class="foto__about-content">
+      <div class="foto__about-content-item foto__about-content-item--1 ">
+        <h2 class="foto__about-content-item--title ">Enjoy friendly cozy atmosphere created by our stylish open spaces</h2>
+      </div>
+      <div class="foto__about-content-item foto__about-content-item--2 ">
+        <h2 class="foto__about-content-item--title ">Chill and have fun with friends after work</h2>
+      </div>
+    </div>
+    <div class="foto__about-content ">
+      <div class="foto__about-content-item foto__about-content-item--3 ">
+        <h2 class="foto__about-content-item--title ">Use our low-noise washers and dryers </h2>
+      </div>
+      <div class="foto__about-content-item foto__about-content-item--4 ">
+        <h2 class="foto__about-content-item--title ">Enjoy high-speed WiFi, Nefflix latest TV-shows, Colivium's library, etc. </h2>
+      </div>
+    </div>
+    <div class="foto__about-content ">
+      <div class="foto__about-content-item foto__about-content-item--5 ">
+        <h2 class="foto__about-content-item--title ">Share your creative and professional ideas with like minded people</h2>
+      </div>
+      <div class="foto__about-content-item foto__about-content-item--6 ">
+        <h2 class="foto__about-content-item--title ">Cook and have friends over in our Colivium's high-end kitchen</h2>
+      </div>
+    </div>
+  </section>
+  <section class="map" id="map">
+    <div class="map__content ">
+      <h3 class="map__content-title map__content-title--mobile ">Contacts</h3>
+      <div id="map__content-map">
+      </div>
+      <div class="map__content-text ">
+        <h3 class="map__content-title map__content-title--desktop ">Contacts</h3>
+        <p class="map__content-row ">Choose Colivium location:</p>
+        <p class="map__content-row--metro ">m.Kurskaya </p>
+        <p class="map__content-row--metro ">m. Belorusskaya</p>
+        <p class="map__content-row--metro ">m. Krasnopresnenskaya</p>
+        <p class="map__content-row--metro ">m. Paveletskaya</p>
+        <a href="#modal4" class="map__content-row--link open_modal ">Request an appointment</a>
+        <div id="modal4" class="modal_div ">
+        <span class="modal_close "></span>
+        <h3 class="modal_div-title ">Request an appointment</h3>
+        <p class="modal_div-text ">Do you want to take a look inside the Colivium? <br>Request an appointment and our manager will contact you soon.</p>
+        <form action="https://formspree.io/hello@colivium.ru" method="POST" class="modal_div-form">
+            <input name="firstname" type="text" placeholder="First name">
+            <input name="lastname" type="text" placeholder="Last name">
+            <input name="email" type="email" placeholder="Facebook link">
+            <input name="tel" type="tel" placeholder="Phone">
+            <input type="hidden" name="_language" value="en" />
+            <button class="modal_div-button ">Request</button>
+          </form>
+        </div>
+      </div>
+  </section>
+  <section class="subscribe ">
+    <h2 class="subscribe__title ">Subscribe to our news</h2>
+    <form action="https://formspree.io/hello@colivium.ru" method="POST" class="subscribe__form">
+      <input type="email" name="email" placeholder="E-mail">
+      <input type="hidden" name="_language" value="ru" />
+      <button class="subscribe__button ">Subscribe</button>
+    </form>
+    <div class="subscribe__content subscribe__content--tablet ">
+      <div class="subscribe__img ">
+        <img src="./assets/img/subscribe-1-min.jpg " alt=" ">
+      </div>
+      <div class="subscribe__img ">
+        <img src="./assets/img/subscribe-2-min.jpg " alt=" ">
+      </div>
+    </div>
+    <div class="subscribe__content subscribe__content--tablet ">
+      <div class="subscribe__img ">
+        <img src="./assets/img/subscribe-3-min.jpg " alt=" ">
+      </div>
+      <div class="subscribe__img ">
+        <img src="./assets/img/subscribe-4-min.jpg " alt=" ">
+      </div>
+    </div>
+    <div class="subscribe__content subscribe__content--mobile ">
+      <div class="subscribe__img ">
+        <img src="./assets/img/subscribe-1-min.jpg " alt=" ">
+      </div>
+      <div class="subscribe__img ">
+        <img src="./assets/img/subscribe-2-min.jpg " alt=" ">
+      </div>
+      <div class="subscribe__img ">
+        <img src="./assets/img/subscribe-3-min.jpg " alt=" ">
+      </div>
+      <div class="subscribe__img ">
+        <img src="./assets/img/subscribe-4-min.jpg " alt=" ">
+      </div>
+      <div class="subscribe__content--opacity "></div>
+      <p>#COLIVIUM</p>
+    </div>
+  </section>
+  <section class="join ">
+    <div class="join__wrapper ">
+      <h2 class="join__title ">Join us today and be the first in line</h2>
+      <a href="#modal5" class="join__link open_modal ">Request a call</a>
+      <div id="modal5" class="modal_div ">
+        <span class="modal_close "></span>
+        <h3 class="modal_div-title ">Request an appointment</h3>
+        <p class="modal_div-text ">Do you want to take a look inside the Colivium? <br>Request an appointment and our manager will contact you soon.</p>
+        <form action="https://formspree.io/hello@colivium.ru" method="POST" class="modal_div-form">
+            <input name="firstname" type="text" placeholder="First name">
+            <input name="lastname" type="text" placeholder="Last name">
+            <input name="email" type="email" placeholder="Facebook link">
+            <input name="tel" type="tel" placeholder="Phone">
+            <input type="hidden" name="_language" value="en" />
+          <button class="modal_div-button ">Request</button>
+        </form>
+      </div>
+  </section>
+  <footer class="footer ">
+    <div class="footer__wrapper ">
+      <div class="footer__content ">
+        <a href="https://www.facebook.com/colivium/ " target="_blank " class="footer__social-link footer__social-link--fb "></a>
+        <a href="https://twitter.com/Colivium " target="_blank " class="footer__social-link footer__social-link--tw "></a>
+        <a href="https://www.instagram.com/colivium/ " target="_blank " class="footer__social-link footer__social-link--in "></a>
+      </div>
+      <p class="footer__row ">Moscow, Taganskaya str., 32/1
+        <br> <a href="mailto:hello@colivium.ru ">hello@colivium.ru</a>
+        <br>© 2018 Colivium, All rights are reserved.
+      </p>
+    </div>
+  </footer>
+  <script src="./assets/js/slider.js "></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI_QwYjdRJdRaQhE_Usq4ddLAa3eX5_30&callback=initMap" async defer></script>
+</body>
+
+</html>
