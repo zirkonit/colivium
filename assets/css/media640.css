@@ -12,7 +12,8 @@
   .advantages__wrapper,
   .community__wrapper,
   .price__wrapper,
-  .join__wrapper {
+  .join__wrapper,
+  .press__wrapper {
     width: 415px;
     margin: 0 auto;
   }
@@ -280,6 +281,14 @@
   .subscribe__content--tablet .subscribe__img {
     width: 48%;
     margin: 0 auto;
+  }
+
+  .press {
+    height: 400px;
+  }
+
+  .press_link {
+    margin-bottom: 30px;
   }
 
 }

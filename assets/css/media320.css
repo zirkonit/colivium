@@ -12,7 +12,8 @@
   .advantages__wrapper,
   .community__wrapper,
   .price__wrapper,
-  .join__wrapper {
+  .join__wrapper,
+  .press__wrapper {
     width: 280px;
     margin: 0 auto;
   }
@@ -123,9 +124,10 @@
   }
 
   .community__row {
-    line-height: 1;
+    line-height: 1.5;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
+    padding: 10px 0;
   }
 
   .about__text-title {
@@ -275,6 +277,18 @@
     width: 280px;
     height: 40px;
     margin: 10px auto;
+  }
+
+  .press__content {
+    justify-content: center;
+  }
+
+  .press {
+    height: 550px;
+  }
+
+  .press_link {
+    margin-bottom: 30px;
   }
 
 }

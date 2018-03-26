@@ -24,7 +24,8 @@ a {
 .advantages__wrapper,
 .community__wrapper,
 .price__wrapper,
-.join__wrapper {
+.join__wrapper,
+.press__wrapper {
   width: 1024px;
   margin: 0 auto;
 }
@@ -487,6 +488,61 @@ a {
 
 
 
+/*   P R E S S   */
+
+.press {
+  height: 250px;
+  padding-top: 50px;
+}
+
+.press__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.press_link {
+  display: block;
+  width: 200px;
+  height: 71px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.press_link--strelka {
+  background-image: url(../img/strelka.svg);
+}
+
+
+.press_link--strelka:hover, .press_link--strelka:active {
+  background-image: url(../img/strelka_hover.svg);
+}
+
+.press_link--village {
+  background-image: url(../img/village.png);
+}
+
+.press_link--village:hover, .press_link--village:active {
+  background-image: url(../img/village_hover.png)
+}
+
+.press_link--rbc {
+  background-image: url(../img/rbc.png);
+}
+
+.press_link--rbc:hover,
+.press_link--rbc:active {
+  background-image: url(../img/rbc_hover.png);
+}
+
+.press_link--ntv {
+  background-image: url(../img/ntv.png);
+}
+
+.press_link--ntv:hover, .press_link--ntv:active {
+  background-image: url(../img/ntv_hover.png);
+}
 
 /*   F O T O - A B O U T   */
 
