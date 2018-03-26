@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="./assets/css/media320.css">
   <link rel="stylesheet" href="./assets/css/slider.css">
   <link rel="stylesheet" href="./assets/css/menu.css">
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/png">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -44,10 +45,8 @@
 
 <body>
   <header class = "header">
-    <video autoplay loop muted class="bgvideo" id="bgvideo">
-      <source src="./assets/Colivium_video.mp4" type="video/mp4"></source>
-    </video>
-    
+    <iframe width='100%' height='100%' src='https://roundme.com/embed/JsJcVVkrZdvsZznbPmRz' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen class="iframe"></iframe>
+    <div class="kostil"></div>
     <nav class="header__nav navbar-fixed-top">
       <h1 class="header__nav-title">Colivium</h1>
       <div class="menu">
@@ -57,6 +56,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#advantages">Advantages</a></li>
           <li><a href="#price">Price</a></li>
+          <li><a href="#press">Press</a></li>
           <li><a href="#map">Contacts</a></li>
           <li><a href="index.html">РУ</a></li>
         </ul>
@@ -69,6 +69,7 @@
         <li class="header__nav-item"><a href="#about">About</a></li>
         <li class="header__nav-item"><a href="#advantages">Advantages</a></li>
         <li class="header__nav-item"><a href="#price">Price</a></li>
+        <li class="header__nav-item"><a href="#press">Press</a></li>
         <li class="header__nav-item"><a href="#map">Contact</a></li>
         <li class="header__nav-item"><a href="index.html">РУ</a></li>
       </ul>
@@ -107,6 +108,8 @@
         </form>
       </div>
       <div class="overlay"></div>
+      <h3 class="header__subtitle header__subtitle--roundme">Explore Tour</h3>
+      <a href="#" class="roudme_link" id="roudme_link"></a>
       </div>
   </header>
   <section class="about" id="about">
@@ -224,7 +227,7 @@
     </div>
   </section>
   <section class="community" id="community">
-    <div class="community__wrapper">        
+    <div class="community__wrapper">
         <div class="community__content">
         <div class="community__text">
           <h3 class="community__title">Community</h3>
@@ -329,6 +332,17 @@
       </div>
     </div>
   </section>
+  <section class="press" id="press">
+    <h2 class="subscribe__title">Colivium in the Press</h2>
+    <div class="press__wrapper">
+      <div class="press__content">
+        <a href="" class="press_link press_link--strelka"></a>
+        <a href="" class="press_link press_link--village"></a>
+        <a href="" class="press_link press_link--rbc"></a>
+        <a href="" class="press_link press_link--ntv"></a>
+      </div>
+    </div>
+  </section>
   <section class="map" id="map">
     <div class="map__content ">
       <h3 class="map__content-title map__content-title--mobile ">Contacts</h3>
@@ -428,6 +442,16 @@
       </p>
     </div>
   </footer>
+  <script>
+  $('#roudme_link').click(function() {
+    $(".kostil").fadeOut(300);
+    $(".header__title").fadeOut(300);
+    $(".header__subtitle").fadeOut(300);
+    $(".header__link").fadeOut(300);
+    $(".roudme_link").fadeOut(300);
+  });
+
+  </script>
   <script src="./assets/js/slider.js "></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI_QwYjdRJdRaQhE_Usq4ddLAa3eX5_30&callback=initMap" async defer></script>
 </body>
