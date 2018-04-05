@@ -75,13 +75,16 @@
   }
 
   .advantages__content {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .advantages__content-item {
-    width: 60%;
-    margin: 0 auto;
+    width: 34%;
     margin-bottom: 20px;
+  }
+
+  .advantages__content-row {
+    font-size: 11px;
   }
 
   .community {

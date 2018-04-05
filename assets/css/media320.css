@@ -63,12 +63,11 @@
   }
 
   .advantages__content {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .advantages__content-item {
-    width: 60%;
-    margin: 0 auto;
+    width: 50%;
     margin-bottom: 20px;
   }
 
@@ -149,6 +148,10 @@
   .advantages__content--bottom {
     padding-top: 5px;
     padding-bottom: 30px;
+  }
+
+  .advantages__content-row {
+    font-size: 11px;
   }
 
   .map__content {
